@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Executable entry point for the composer-repo-tool
+ */
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use xiian\ComposerRepoTool\Command;
+
+$application = new Application();
+$application->add(new Command\UpdateCommand());
+$application->add(new Command\UpdateAllCommand());
+$application->run();
