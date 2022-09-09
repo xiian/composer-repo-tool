@@ -2,7 +2,6 @@
     "name": "xiian/composer-repo-tool",
     "description": "Easily manage custom repositories in your composer setup.",
     "license": "MIT",
-    "version": "1.0",
     "bin": ["bin/composer-repo-tool"],
     "require": {
         "symfony/console": "^3.0",
